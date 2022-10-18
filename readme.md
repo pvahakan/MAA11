@@ -25,6 +25,7 @@ Hyvä:
 
 Erinomainen:
 
-- Aluksi piirretään funktion kuvaaja matplotlib-kirjastolla
-- Käyttäjältä kysytään alkuarvaus / aloitusväli kuvan perusteella
-- Ohjelma ratkaisee yhtälö
+- Aluksi piirretään funktion kuvaaja matplotlib-kirjastolla.
+- Käyttäjältä kysytään alkuarvaus / aloitusväli kuvan perusteella.
+- Ohjelma ratkaisee yhtälön.
+- Lopuksi ohjelma piirtää funktion kuvaajan uudelleen ja ratkaisupiste on merkitty kuvaajaan punaisella rastilla.

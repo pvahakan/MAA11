@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 import matplotlib.pyplot as plt
 import numpy as np
 
@@ -11,18 +9,19 @@ def f(x):
 
 
 # Piirretään funktion kuvaaja
-x = np.linspace(0.0001, 5, 100)
+x = np.linspace(0.0001, 3, 100)
 y = f(x)
 
 plt.plot(x, y)
+plt.grid(True)
 plt.show()
 
 
 # Annetaan ratkaistavan välin tiedot
-alaraja = float(input('Anna alaraja: '))
-ylaraja = float(input('Anna yläraja: '))
+alaraja = 0.0001 # float(input('Anna alaraja: '))
+ylaraja = 4 # float(input('Anna yläraja: '))
 
-virhemarginaali = 0.00001
+virhemarginaali = 0.00000001
 i = 0 # Laskuri iteraatioita varten
 
 keskipiste = (ylaraja + alaraja) / 2
@@ -42,8 +41,13 @@ while abs(f(keskipiste) - 0) > virhemarginaali:
 
     keskipiste = (ylaraja + alaraja) / 2
 
-
+# Tulostetaan tiedot näkyviin
 print(f'keskipiste: {keskipiste}')
 print(f'f(keskipiste): {f(keskipiste)}')
 print(f'Iteraatioita {i} kpl.')
     
+# Piirretään funktion kuvaaja ja merkitään siihen ratkaisukohta
+plt.plot(x, y)
+plt.grid(True)
+plt.plot(keskipiste, f(keskipiste), 'x', color='red')
+plt.show()
