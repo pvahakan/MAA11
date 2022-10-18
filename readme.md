@@ -20,7 +20,7 @@ Ihan ok:
 
 Hyvä:
 
-- Osaat muokata koodia siten, että sillä voi ratkaista myös muita yhtälöitä, esim. $x - \sqrt{x + 4} = 0$
+- Osaat muokata koodia siten, että sillä voi ratkaista myös muita yhtälöitä, esim. $x - \sqrt{x + 4} = 0$ ja $x - log(x) - 3 = 0$
 - Ohjelma tulostaa yhtälön ratkaisun ja iteraatioiden lukumäärän
 
 Erinomainen:

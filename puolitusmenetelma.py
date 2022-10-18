@@ -5,9 +5,9 @@ import numpy as np
 def f(x):
     # return np.exp(-0.5*x) - 1
     # return -3*x**3 + 2*x**2 - 3*x + 5
-    # return x + np.log(x)
+    return x - np.log(x) - 3
     # return x - np.cos(x)
-    return x - np.sqrt(x + 4)
+    # return x - np.sqrt(x + 4)
 
 
 
@@ -34,7 +34,11 @@ while abs(f(keskipiste) - 0) > virhemarginaali:
     i += 1
     if f(keskipiste) < 0 and f(alaraja) < 0:
         alaraja = keskipiste
+    elif f(keskipiste) > 0 and f(alaraja) > 0:
+        alaraja = keskipiste
     elif f(keskipiste) > 0 and f(ylaraja) > 0:
+        ylaraja = keskipiste
+    elif f(keskipiste) < 0 and f(ylaraja) < 0:
         ylaraja = keskipiste
     # # Edistyneempi ratkaisu
     # if f(keskipiste) * f(alaraja) > 0:
