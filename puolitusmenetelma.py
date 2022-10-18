@@ -6,7 +6,9 @@ def f(x):
     # return np.exp(-0.5*x) - 1
     # return -3*x**3 + 2*x**2 - 3*x + 5
     # return x + np.log(x)
-    return x - np.cos(x)
+    # return x - np.cos(x)
+    return x - np.sqrt(x + 4)
+
 
 
 # Piirretään funktion kuvaaja
